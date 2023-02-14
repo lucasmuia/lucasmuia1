@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Css/Estilos.css" />
+    <!-- Link de pág de iconos: "https://boxicons.com/usage#import-css" -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fuente de google -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+    </style>
+    <title>Curriculum Vitae</title>
+  </head>
+  <foorer>
+    <!-- header -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+
+        <div>
+          <a href="#" class="nav__logo">Mi CV</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x-circle"></i>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#Home" class="nav__link active">Inicio</a></li>
+            <li class="nav__item"><a href="#About" class="nav__link">Quién soy</a></li>
+            <li class="nav__item"><a href="#Skills" class="nav__link">Experiencia</a></li>
+            <li class="nav__item"><a href="#Contact" class="nav__link">Contáctame</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+      <!-- Boton de whatsapp-->
+      <a href="https://wa.me/+5491169784422" class="btn-wsp" target="_blank" data-aos="fade-up-left">
+      <i class='bx bxl-whatsapp'></i></a>
+      
+    <main class="l-main">
+      <!--== Inicio ==-->
+      <section class="Home" id="Home">
+        <div class="home__container bd-grid">
+          <div class="home__data">
+            <div class="home__img">
+              <img src="Imagenes/Yo-Sin-Fondo.png" alt="Aparece una imagen mia">
+            </div>
+            
+            <h1 class="home__title">Lucas Muia</h1>
+            <span class="home__profession">Desarrollador inicial</span>
+
+            <div class="home__social">
+              <a href="https://www.linkedin.com/in/lucas-muia-065662259" class="Home__social-link"><i class='bx bxl-linkedin'></i></a>
+              <a href="https://github.com/lucasmuia" class="Home__social-link"><i class='bx bxl-github'></i></a>
+              <a href="https://www.facebook.com/Lucas.Muia" class="Home__social-link"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="https://www.instagram.com/lucasmuiaok" class="Home__social-link"><i class='bx bxl-instagram'></i></a>
+              <a href="https://wa.me/541169784422" class="Home__social-link"><i class='bx bxl-whatsapp'></i></a>
+            </div>  
+      
+            <a download="" href="#" class="button home__button">Descargar Resumen</a>
+          </div>  
+        </div>
+      </section>
+
+      <!--== Acerca mio ==-->
+      <section class="about section" id="About">
+        <span class="section-subtitle"></span>
+        <h2 class="section-title">Quién soy</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <p class="about__description">Hola, mi nombre es Lucas y soy nuevo en el desarrollo de paginas web.</p>
+            <img src="Imagenes/3-Sin-Fondo.png" alt="" class="about__img">
+          </div>
+              
+          <div>
+            <div class="about__information">
+              <h3 class="about__information-title">Información</h3>
+            
+              <div class="about__information-data">
+                <i class='bx bxs-user about__information-icon'></i>
+                <span>Lucas Muia.</span>
+              </div>
+          
+              <div class="about__information-data">
+                <i class='bx bx-phone about__information-icon'></i>
+                <span>1169784422.</span>
+              </div>
+          
+              <div class="about__information-data">
+                <i class='bx bx-envelope about__information-icon'></i>
+                <span>lucasmuia.lm@gmail.com.</span>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+                
+      <!--== Habilidades ==-->        
+      <section class="Skills section" id="Skills">
+          <h2 class="section-title">Mi Experiencia</h2>
+          
+          <div>
+            <div class="about__information">
+
+              
+                <div class="about__information-data">
+                  <i class='bx bx-medal about__information-icon'></i>
+                  <span>Por ahora este es mi primer proyecto, pero mi objetivo es superarme en todos los aspectos.</span>
+                </div>
+            
+                <div class="about__information-data">
+                  <i class='bx bx-support about__information-icon'></i>
+                  <span>Soporte técnico: Online 24/7.</span>
+                </div>
+            </div>
+          </div>
+
+      </section>
+
+      <!--== Contactarme ==-->
+      <section class="contact section" id="Contact">
+          <h2 class="section-title">Ponerse en contacto</h2>
+
+          <section>
+            <article class="contact__input">
+              
+              <form action="enviar_v2.php" method="POST">
+                <fieldset>
+                  <label>Nombre y apellido</label>
+                  <input type="text" name="nombre" />
+                </fieldset>
+                <fieldset>
+                  <label>Provincia</label>
+                  <input type="text" name="provincia" />
+                </fieldset>
+                <fieldset>
+                  <label>Localidad</label>
+                  <input type="text" name="localidad" />
+                </fieldset>
+                <fieldset>
+                  <label>Email</label>
+                  <input type="email" name="email" />
+                </fieldset>
+                <fieldset>
+                  <label>Mensaje</label>
+                  <textarea name="mensaje"></textarea>
+                </fieldset>
+                <fieldset>
+                  <input type="hidden" name="formulario" value="contacto" />
+                  <input type="submit" value="Enviar" />
+                </fieldset>
+                
+              </form>
+    
+              <a href="mailto:lucasmuia.lm@gmail.com?subject=Contacto Online"></a><br>
+              <a href="mailto:lucasmuia.lm@gmail.com?subject=Contacto Online"></a></p>
+              </div>
+                </article>
+          </section>
+    
+
+            <div>
+                <div class="contact__info">
+                  <h3 class="contact__subtitle">LLámame</h3>
+                  <span class="contact__text">1169784422</span>
+                </div>
+                
+                <div class="contact__info">
+                  <h3 class="contact__subtitle">E-mail</h3>
+                  <span class="contact__text">lucasmuia.lm@gmail.com</span>
+                </div>
+              
+                <div class="contact__info">
+                  <h3 class="contact__subtitle">Localización</h3>
+                  <span class="contact__text">Av. Calle Falsa 123</span>
+                  <span class="contact__text">Springfield - USA</span>
+                </div>
+
+            </div>
+          </div>
+      </section>
+
+    </main>
+
+    <!--== Pie de página ==-->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <h1 class="footer__title">Lucas</h1>
+        <p class="footer__description">Hola, soy lucas y este es mi sitio web.</p>
+
+        <div class="footer__social">
+          <a href="https://www.facebook.com/Lucas.Muia" class="footer__link"><i class="bx bxl-facebook" ></i></a>
+          <a href="https://www.instagram.com/lucasmuiaok" class="footer__link"><i class="bx bxl-instagram" ></i></a>
+          <a href="https://twitter.com/LucasMuiaOk" class="footer__link"><i class="bx bxl-twitter" ></i></a>
+        </div>
+
+        <p class="footer__copy">Todos los derechos reservados por LucasMuiaSA - 2023</p>
+      </div>
+
+    </footer>
+    
+    <!--== Js ==-->
+    <script src="Js/function.js"></script>
+  
+  </body>
+  </html>
